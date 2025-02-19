@@ -3,40 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Sen - Portfolio</title>
+    <title>Portfolio - Abhishek Sen</title>
     <link rel="stylesheet" href="style.css">
-    <script src="projects.js" defer></script>
 </head>
 <body>
+
+    <!-- Dark Mode Button -->
+    <button onclick="toggleDarkMode()" class="dark-mode-btn">🌙 Toggle Dark Mode</button>
+
     <header>
-        <h1>Abhishek Sen</h1>
-        <p>Business Analytics | Data Science | Machine Learning</p>
+        <h1>Abhishek Sen - Portfolio</h1>
     </header>
 
-    <section id="intro">
-        <h2>Welcome to My Portfolio!</h2>
-        <p>I am a Business Analytics graduate with a strong foundation in data analysis, reporting, and process optimization. 
-        I’m passionate about leveraging data to deliver strategic insights and improve business performance.</p>
+    <section>
+        <h2>About Me</h2>
+        <p>
+            I am a Business Analytics graduate with a strong foundation in data analysis, reporting, 
+            and process optimization. I’m passionate about leveraging data to deliver strategic insights 
+            and improve business performance.
+        </p>
     </section>
 
     <section id="projects">
-        <h2>📂 My Projects</h2>
-        <p>Below are some of my key projects:</p>
-        <div id="project-list">
-            <!-- Projects will be loaded dynamically from GitHub -->
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>ML Project 1</h3>
+            <p>Data analysis and predictive modeling using Python.</p>
+            <a href="https://github.com/whysomebody1/ML-Projects" target="_blank">View on GitHub</a>
         </div>
-    </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p><strong>📍 Location:</strong> Dublin, Ireland</p>
-        <p><strong>📧 Email:</strong> <a href="mailto:abhishek.sen808@hotmail.com">abhishek.sen808@hotmail.com</a></p>
-        <p><strong>🔗 LinkedIn:</strong> <a href="https://linkedin.com/in/abhishek-sen" target="_blank">linkedin.com/in/abhishek-sen</a></p>
-        <p><strong>🔗 GitHub:</strong> <a href="https://github.com/whysomebody1" target="_blank">github.com/whysomebody1</a></p>
+        <div class="project">
+            <h3>Thesis - Sign Language Recognition</h3>
+            <p>Deep learning model for American Sign Language recognition.</p>
+            <a href="https://github.com/whysomebody1/Sign_Language_Recognition_Thesis" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project">
+            <h3>News Sentiment Analysis</h3>
+            <p>Sentiment classification on political tweets using NLP.</p>
+            <a href="https://github.com/whysomebody1/Tweet_Classification" target="_blank">View on GitHub</a>
+        </div>
     </section>
 
     <footer>
         <p>© 2024 Abhishek Sen. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+
+            // Save user's preference to local storage
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
+        }
+
+        // Apply theme on page load
+        window.onload = function () {
+            if (localStorage.getItem("theme") === "dark") {
+                document.body.classList.add("dark-mode");
+            }
+        };
+    </script>
+
 </body>
 </html>
