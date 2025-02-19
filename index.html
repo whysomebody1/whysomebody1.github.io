@@ -3,86 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Abhishek Sen</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav>
+        <h1>My Portfolio</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#socials">Socials</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
 
-    <!-- Dark Mode Toggle Button -->
-    <button onclick="toggleDarkMode()" class="dark-mode-btn">🌙 Toggle Dark Mode</button>
-
-    <header>
-        <h1>Abhishek Sen - Portfolio</h1>
-    </header>
-
-    <section>
+    <!-- About Section -->
+    <section id="about">
         <h2>About Me</h2>
-        <p>
-            I am a Business Analytics graduate with a strong foundation in data analysis, reporting, 
-            and process optimization. I’m passionate about leveraging data to deliver strategic insights 
-            and improve business performance.
-        </p>
+        <p>Hello! I'm <strong>whysomebody1</strong>. Welcome to my portfolio.</p>
     </section>
 
+    <!-- Socials Section -->
+    <section id="socials">
+        <h2>Socials</h2>
+        <a href="https://github.com/whysomebody1" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    </section>
+
+    <!-- Projects Section -->
     <section id="projects">
-    <h2>My Projects</h2>
+        <h2>Projects</h2>
+        <div id="projects-container">
+            <!-- Projects will be loaded here dynamically -->
+        </div>
+    </section>
 
-    <div class="project">
-        <h3>Machine Learning Projects</h3>
-        <p>Collection of ML models using Python & Scikit-learn.</p>
-        <a href="https://github.com/whysomebody1/ML-Projects" target="_blank">🔗 View on GitHub</a>
-    </div>
-
-    <div class="project">
-        <h3>Sign Language Recognition (Thesis Project)</h3>
-        <p>Deep Learning model for recognizing sign language.</p>
-        <a href="https://github.com/whysomebody1/Sign_Language_Recognition_Thesis" target="_blank">🔗 View on GitHub</a>
-    </div>
-
-    <div class="project">
-        <h3>News Sentiment Analysis</h3>
-        <p>Predicts sentiment of tweets using NLP models.</p>
-        <a href="https://github.com/whysomebody1/Tweet_Classification" target="_blank">🔗 View on GitHub</a>
-    </div>
-
-    <div class="project">
-        <h3>Churn Prediction</h3>
-        <p>Predicting customer churn using ensemble models.</p>
-        <a href="https://github.com/whysomebody1/ChurnPrediction" target="_blank">🔗 View on GitHub</a>
-    </div>
-
-    <div class="project">
-        <h3>Temperature Clustering</h3>
-        <p>Clustering climate data using UMAP & KMeans.</p>
-        <a href="https://github.com/whysomebody1/Avg_Temperatures_UMAP_KMeans" target="_blank">🔗 View on GitHub</a>
-    </div>
-
-    <div class="project">
-        <h3>News Classification</h3>
-        <p>Classifies news articles using Support Vector Machines.</p>
-        <a href="https://github.com/whysomebody1/News_SVC_NBC" target="_blank">🔗 View on GitHub</a>
-    </div>
-
-    <div class="project">
-        <h3>Iris PCA & KMeans Clustering</h3>
-        <p>Feature reduction using PCA & clustering with KMeans.</p>
-        <a href="https://github.com/whysomebody1/Iris_PCA_KMeans" target="_blank">🔗 View on GitHub</a>
-    </div>
-
-    <div class="project">
-        <h3>Sentiment Analysis - Trump Tweets</h3>
-        <p>Classifies sentiment of Donald Trump’s tweets.</p>
-        <a href="https://github.com/whysomebody1/Sentiment_Prediction" target="_blank">🔗 View on GitHub</a>
-    </div>
-
-</section>
-
-
-    <footer>
-        <p>© 2024 Abhishek Sen. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-
+    <script src="assets/script.js"></script>
 </body>
 </html>
