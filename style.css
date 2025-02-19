@@ -1,116 +1,38 @@
-/* General Styles */
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: white;
     text-align: center;
-    transition: background 0.5s, color 0.5s;
 }
-
-/* Header */
-header {
-    background: linear-gradient(135deg, #2c3e50, #34495e);
+nav {
+    background: #222;
     color: white;
-    padding: 30px;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
 }
-
-/* Sections */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
 section {
-    padding: 30px;
-    margin: 20px auto;
-    width: 75%;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+    padding: 40px;
 }
-
-section:hover {
-    transform: scale(1.02);
-}
-
-/* Footer */
-footer {
-    background: linear-gradient(135deg, #2c3e50, #34495e);
-    color: white;
-    padding: 20px;
-    font-size: 14px;
-    margin-top: 40px;
-    text-align: center;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
-}
-
-#projects {
+#projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
 }
-
-.project {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+.project-card {
+    border: 1px solid #ccc;
     padding: 20px;
-    width: 320px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
-}
-
-.project a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #ffcc00;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.project a:hover {
-    color: #ff5733;
-}
-
-
-/* Dark Mode Toggle Button */
-.dark-mode-btn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: #ffcc00;
-    color: #1a1a1a;
-    border: none;
-    padding: 10px 15px;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-}
-
-.dark-mode-btn:hover {
-    background: #ff5733;
-    color: white;
-}
-
-/* Dark Mode */
-.dark-mode {
-    background-color: #0d0d0d;
-    color: #e0e0e0;
-}
-
-.dark-mode header, .dark-mode footer {
-    background: #222;
+    margin: 10px;
+    width: 300px;
+    background: #f9f9f9;
 }
