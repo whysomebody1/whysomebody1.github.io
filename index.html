@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!-- Dark Mode Button -->
+    <!-- Dark Mode Toggle Button -->
     <button onclick="toggleDarkMode()" class="dark-mode-btn">🌙 Toggle Dark Mode</button>
 
     <header>
@@ -49,25 +49,7 @@
         <p>© 2024 Abhishek Sen. All rights reserved.</p>
     </footer>
 
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark-mode");
-
-            // Save user's preference to local storage
-            if (document.body.classList.contains("dark-mode")) {
-                localStorage.setItem("theme", "dark");
-            } else {
-                localStorage.setItem("theme", "light");
-            }
-        }
-
-        // Apply theme on page load
-        window.onload = function () {
-            if (localStorage.getItem("theme") === "dark") {
-                document.body.classList.add("dark-mode");
-            }
-        };
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
