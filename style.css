@@ -49,18 +49,6 @@ footer {
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Links */
-a {
-    color: #ffcc00;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-a:hover {
-    color: #ff5733;
-}
-
 /* Project Cards */
 .project {
     background: rgba(255, 255, 255, 0.1);
@@ -76,41 +64,6 @@ a:hover {
 .project:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
-}
-
-/* Dark Mode Styles */
-.dark-mode {
-    background-color: #0d0d0d;
-    color: #e0e0e0;
-    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
-}
-
-.dark-mode header {
-    background: linear-gradient(135deg, #1a1a1a, #222);
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-}
-
-.dark-mode section {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.dark-mode a {
-    color: #ffcc00;
-    transition: color 0.3s ease-in-out;
-}
-
-.dark-mode a:hover {
-    color: #ff5733;
-}
-
-.dark-mode .project {
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
-}
-
-.dark-mode footer {
-    background: linear-gradient(135deg, #1a1a1a, #222);
 }
 
 /* Dark Mode Toggle Button */
@@ -132,4 +85,14 @@ a:hover {
 .dark-mode-btn:hover {
     background: #ff5733;
     color: white;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+}
+
+.dark-mode header, .dark-mode footer {
+    background: #222;
 }
